@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아이콘 시안</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root { --bg:#F7F5FA; --card:#fff; --text:#1D1B20; --dim:#6F6A78; --line:#E7E2EE; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121016; --card:#1C1A21; --text:#E9E4EE; --dim:#9E98A8; --line:#2E2A36; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:28px 18px 60px;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.6}
+  main{max-width:560px;margin:0 auto}
+  h1{font-size:20px;margin:0 0 4px}
+  .lead{color:var(--dim);font-size:14px;margin:0 0 28px}
+  .row{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:20px;margin-bottom:16px}
+  .name{font-weight:600;font-size:15px;margin:0 0 2px}
+  .desc{color:var(--dim);font-size:13px;margin:0 0 16px}
+  .sizes{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap}
+  .one{text-align:center}
+  .one span{display:block;font-size:11px;color:var(--dim);margin-top:6px}
+  .sq{border-radius:22%;overflow:hidden;display:block}   /* 안드로이드 둥근사각 마스크 */
+  .ci{border-radius:50%;overflow:hidden;display:block}   /* 원형 마스크 */
+</style></head><body><main>
+
+<h1>아이콘 시안 3개</h1>
+<p class="lead">실제 폰에서 보이는 크기(48)까지 같이 뒀습니다. <b>작을 때 알아볼 수 있는지</b>가 제일 중요해요.</p>
+
+<!-- ================= A ================= -->
+<div class="row">
+  <p class="name">A. 시간표</p>
+  <p class="desc">흰 표 위에 색 일정이 놓인 모양. 앱을 열면 보이는 화면과 같습니다.</p>
+  <div class="sizes">
+    <div class="one"><svg class="sq" width="112" height="112" viewBox="0 0 108 108"><use href="#a"/></svg><span>112</span></div>
+    <div class="one"><svg class="sq" width="72" height="72" viewBox="0 0 108 108"><use href="#a"/></svg><span>72</span></div>
+    <div class="one"><svg class="sq" width="48" height="48" viewBox="0 0 108 108"><use href="#a"/></svg><span>48 실제</span></div>
+    <div class="one"><svg class="ci" width="48" height="48" viewBox="0 0 108 108"><use href="#a"/></svg><span>원형</span></div>
+  </div>
+</div>
+
+<!-- ================= B ================= -->
+<div class="row">
+  <p class="name">B. 일정 블록</p>
+  <p class="desc">표는 빼고 일정 막대만. 가장 단순해서 작을 때 잘 보입니다.</p>
+  <div class="sizes">
+    <div class="one"><svg class="sq" width="112" height="112" viewBox="0 0 108 108"><use href="#b"/></svg><span>112</span></div>
+    <div class="one"><svg class="sq" width="72" height="72" viewBox="0 0 108 108"><use href="#b"/></svg><span>72</span></div>
+    <div class="one"><svg class="sq" width="48" height="48" viewBox="0 0 108 108"><use href="#b"/></svg><span>48 실제</span></div>
+    <div class="one"><svg class="ci" width="48" height="48" viewBox="0 0 108 108"><use href="#b"/></svg><span>원형</span></div>
+  </div>
+</div>
+
+<!-- ================= C ================= -->
+<div class="row">
+  <p class="name">C. 오늘</p>
+  <p class="desc">표에서 오늘 칸만 색이 들어옵니다. 위젯의 핵심 기능을 그림으로 보여줘요.</p>
+  <div class="sizes">
+    <div class="one"><svg class="sq" width="112" height="112" viewBox="0 0 108 108"><use href="#c"/></svg><span>112</span></div>
+    <div class="one"><svg class="sq" width="72" height="72" viewBox="0 0 108 108"><use href="#c"/></svg><span>72</span></div>
+    <div class="one"><svg class="sq" width="48" height="48" viewBox="0 0 108 108"><use href="#c"/></svg><span>48 실제</span></div>
+    <div class="one"><svg class="ci" width="48" height="48" viewBox="0 0 108 108"><use href="#c"/></svg><span>원형</span></div>
+  </div>
+</div>
+
+<!-- ===== 도형 정의 (한 번만 그리고 위에서 가져다 씁니다) ===== -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+
+    <!-- A. 시간표 -->
+    <g id="a">
+      <rect width="108" height="108" fill="#3F51B5"/>
+      <rect x="24" y="26" width="60" height="56" rx="7" fill="#FFFFFF"/>
+      <rect x="24" y="26" width="60" height="9"  rx="7" fill="#DDE1F3"/>
+      <rect x="24" y="30" width="60" height="5"  fill="#DDE1F3"/>
+      <rect x="30" y="41" width="14" height="20" rx="3" fill="#6E92D8"/>
+      <rect x="47" y="52" width="14" height="24" rx="3" fill="#EE9B57"/>
+      <rect x="64" y="41" width="14" height="15" rx="3" fill="#6BBE7C"/>
+    </g>
+
+    <!-- B. 일정 블록 -->
+    <g id="b">
+      <rect width="108" height="108" fill="#3F51B5"/>
+      <rect x="26" y="30" width="15" height="30" rx="5" fill="#FFFFFF"/>
+      <rect x="46" y="44" width="15" height="34" rx="5" fill="#FFD08A"/>
+      <rect x="66" y="34" width="15" height="22" rx="5" fill="#9FE3AC"/>
+    </g>
+
+    <!-- C. 오늘 -->
+    <g id="c">
+      <rect width="108" height="108" fill="#3F51B5"/>
+      <rect x="24" y="26" width="60" height="56" rx="7" fill="#FFFFFF"/>
+      <rect x="44" y="26" width="20" height="56" fill="#E3E7FA"/>
+      <rect x="47" y="40" width="14" height="18" rx="3" fill="#3F51B5"/>
+      <rect x="47" y="62" width="14" height="12" rx="3" fill="#3F51B5"/>
+      <rect x="28" y="46" width="12" height="3" rx="1.5" fill="#C9CEDE"/>
+      <rect x="28" y="55" width="12" height="3" rx="1.5" fill="#C9CEDE"/>
+      <rect x="68" y="40" width="12" height="3" rx="1.5" fill="#C9CEDE"/>
+      <rect x="68" y="49" width="12" height="3" rx="1.5" fill="#C9CEDE"/>
+      <rect x="24" y="26" width="60" height="9" rx="7" fill="#B9C0E8"/>
+      <rect x="24" y="30" width="60" height="5" fill="#B9C0E8"/>
+    </g>
+
+  </defs>
+</svg>
+
+</main></body></html>
