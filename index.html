@@ -19,8 +19,6 @@
     --dim: #79747E;
     --line: #E7E0EC;
     --brand: #3F51B5;      /* ✏️ 고치는 곳 2 — 앱 테마색과 맞추면 예뻐요 */
-    --kakao: #FEE500;
-    --kakao-text: #191600;
   }
   /* 폰이 어두운 테마일 때 자동으로 바뀝니다 */
   @media (prefers-color-scheme: dark) {
@@ -73,28 +71,7 @@
   .card p { margin: 0 0 14px; font-size: 15px; }
   .card p:last-child { margin-bottom: 0; }
 
-  /* 카카오페이 버튼 */
-  .pay {
-    display: block;
-    background: var(--kakao);
-    color: var(--kakao-text);
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 16px;
-    border-radius: 12px;
-    margin-top: 20px;
-  }
-  .pay:active { opacity: .8; }
 
-  /* Play 정책 때문에 꼭 필요한 안내 */
-  .note {
-    font-size: 13px;
-    color: var(--dim);
-    text-align: center;
-    margin-top: 14px;
-  }
 
   footer {
     text-align: center;
@@ -125,16 +102,8 @@
       적어 넣으신 시간표는 폰 안에만 있어요.
     </p>
     <p>
-      혹시 잘 쓰고 계시다면, 커피 한 잔 정도로 응원해 주셔도 좋고
-      안 하셔도 전혀 괜찮습니다.
-    </p>
-
-    <!-- ✏️ 고치는 곳 4 — 아래 # 자리에 카카오페이 송금 링크를 넣으세요 -->
-    <a class="pay" href="#">☕ 커피 한 잔 후원하기</a>
-
-    <p class="note">
-      후원하셔도 앱에서 달라지는 건 없어요.<br>
-      그냥 고맙습니다.
+      궁금한 점이나 고쳤으면 하는 게 있으면 아래 메일로 알려 주세요.
+      혼자 만들고 있어서 답이 늦을 수 있지만, 다 읽어 봅니다.
     </p>
   </div>
 
