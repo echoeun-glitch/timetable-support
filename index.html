@@ -20,8 +20,6 @@
     --line: #E7E2EE;
     --brand: #3F51B5;      /* ✏️ 고치는 곳 2 — 앱 테마색과 맞추면 예뻐요 */
     --brand-soft: #EEF0FB;
-    --kakao: #FEE500;
-    --kakao-text: #191600;
     --shadow: 0 1px 2px rgba(20,16,30,.05), 0 8px 24px rgba(20,16,30,.06);
   }
   /* 폰이 어두운 테마일 때 자동으로 바뀝니다 */
@@ -118,37 +116,6 @@
   .card p { margin: 0 0 15px; font-size: 15px; }
   .card p:last-child { margin-bottom: 0; }
 
-  /* ===== 후원 부분 ===== */
-  .support {
-    margin-top: 24px;
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
-  }
-
-  .pay {
-    display: block;
-    background: var(--kakao);
-    color: var(--kakao-text);
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px; font-weight: 700;
-    padding: 16px;
-    border-radius: 14px;
-    box-shadow: 0 4px 14px rgba(254,229,0,.35);
-    transition: transform .12s ease, box-shadow .12s ease;
-  }
-  .pay:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(254,229,0,.45); }
-  .pay:active { transform: translateY(1px); box-shadow: 0 2px 8px rgba(254,229,0,.3); }
-
-  /* Play 정책 때문에 꼭 필요한 안내 */
-  .note {
-    font-size: 12.5px;
-    color: var(--dim);
-    text-align: center;
-    margin-top: 14px !important;
-    line-height: 1.6;
-  }
-
   /* ===== 맨 아래 ===== */
   footer {
     text-align: center;
@@ -201,16 +168,6 @@
       궁금한 점이나 고쳤으면 하는 게 있으면 아래 메일로 알려 주세요.
       혼자 만들고 있어서 답이 늦을 수 있지만, 다 읽어 봅니다.
     </p>
-
-    <div class="support">
-      <!-- 카카오페이 송금 링크 (수신 전용) -->
-      <a class="pay" href="https://qr.kakaopay.com/FbHglM8y5">☕ 커피 한 잔 후원하기</a>
-
-      <p class="note">
-        더 사용하기 편한 어플들을 만드는데 사용하겠습니다.<br>
-        후원하셔도 앱에서 달라지는 건 없습니다. 감사합니다.
-      </p>
-    </div>
   </div>
 
   <footer>
