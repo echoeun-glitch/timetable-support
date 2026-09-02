@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  간단시간표 아이콘 — 일정 블록 3개
+  108x108 칸에서 그리고, 안드로이드는 가장자리를 잘라냅니다.
+  블록은 x 26~81, y 30~78 안에 있어 어떤 모양으로 잘려도 안전합니다.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 1번 분홍 -->
+    <path
+        android:fillColor="#FF66C4"
+        android:pathData="M28,30 h11 a2,2 0 0 1 2,2 v26 a2,2 0 0 1 -2,2 h-11 a2,2 0 0 1 -2,-2 v-26 a2,2 0 0 1 2,-2 z" />
+
+    <!-- 2번 파랑 -->
+    <path
+        android:fillColor="#38B6FF"
+        android:pathData="M48,44 h11 a2,2 0 0 1 2,2 v30 a2,2 0 0 1 -2,2 h-11 a2,2 0 0 1 -2,-2 v-30 a2,2 0 0 1 2,-2 z" />
+
+    <!-- 3번 초록 -->
+    <path
+        android:fillColor="#00BF63"
+        android:pathData="M68,34 h11 a2,2 0 0 1 2,2 v18 a2,2 0 0 1 -2,2 h-11 a2,2 0 0 1 -2,-2 v-18 a2,2 0 0 1 2,-2 z" />
+
+</vector>
