@@ -66,19 +66,15 @@
   /* ===== 머리 부분 ===== */
   header { text-align: center; padding: 56px 0 36px; }
 
+  /* 앱 아이콘과 같은 그림 */
   .icon {
-    width: 72px; height: 72px;
+    width: 76px; height: 76px;
     margin: 0 auto 18px;
-    border-radius: 20px;
-    background: var(--brand);
-    display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 6px 20px rgba(63,81,181,.32);
-  }
-  .icon span {
-    display: block; width: 32px; height: 3px;
-    background: #fff; border-radius: 2px;
-    box-shadow: 0 9px 0 #fff, 0 18px 0 #fff;
-    margin-bottom: 18px;
+    border-radius: 21px;
+    background: #FFFFFF;
+    border: 1px solid var(--line);
+    box-shadow: 0 6px 20px rgba(20,16,30,.12);
+    display: block;
   }
 
   .sub { color: var(--dim); font-size: 14px; margin: 0; }
@@ -133,7 +129,11 @@
 <main>
 
   <header>
-    <div class="icon"><span></span></div>
+    <svg class="icon" viewBox="0 0 108 108" role="img" aria-label="간단시간표 아이콘">
+      <rect x="26" y="30" width="15" height="30" rx="2" fill="#FF66C4"/>
+      <rect x="46" y="44" width="15" height="34" rx="2" fill="#38B6FF"/>
+      <rect x="66" y="34" width="15" height="22" rx="2" fill="#00BF63"/>
+    </svg>
 
     <!-- ✏️ 고치는 곳 3 — 앱 이름 -->
     <h1>간단시간표</h1>
